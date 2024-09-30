@@ -279,7 +279,7 @@ section.banner:after {
     } */
 
     .sticky-top {
-        top: 70px;
+        top: 20px;
     }
     .box img {
         height: 350px;
