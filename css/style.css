@@ -285,6 +285,9 @@ section.banner:after {
     .platform h2 {
         margin-bottom: 1em !important;
     }
+    .box h3 {
+        font-size: 1.7em;
+    }
     
     .integrate-main{
         padding: 40px 15px;
