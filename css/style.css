@@ -277,6 +277,15 @@ section.banner:after {
     /* .banner {
         padding: 0em;
     } */
+
+    .sticky-top {
+        top: 0px;
+    }
+
+    .platform h2 {
+        margin-bottom: 1em !important;
+    }
+    
     .integrate-main{
         padding: 40px 15px;
     }
