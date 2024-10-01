@@ -1,10 +1,3 @@
-@font-face {
-    font-family: test_tiempos_headlineblack;
-    src: url("../fonts/testtiemposheadline-black-bf66457a50e385b-webfont.woff2") format("woff2"), url("../fonts/testtiemposheadline-black-bf66457a50e385b-webfont.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
 
 html {
     scroll-behavior: smooth;
@@ -142,7 +135,7 @@ section.banner:after {
     background: #ffffff;
     padding: 25px 50px;
     border-radius: 50px;
-    box-shadow: 0px 5px 18px -10px rgb(0 0 0 / 30%);
+    box-shadow: 0px 5px 17px -14px #CE1010;
 
 }
 
