@@ -81,11 +81,10 @@ section {
 .banner{
     background: #1C43B9 ;
     padding: 8em 0;
-    /* height: 100vh; */
     overflow: hidden;
 }
 .banner p{
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-family: 'helvetica_neuelight';
 }
 .banner .container{
@@ -132,10 +131,9 @@ section.banner:after {
 
 /* Testimonials Start */
 .testimonials {
-    background: #1C43B9 url(../images/bg-img1.png) repeat;
+    background: #1C43B9 url(../images/dots-bg.svg) repeat;
     overflow: hidden;
     background-attachment: fixed;
-    background-size: 10%;
 }
 
 .testimonials .slick-slider, .testimonials h2{
@@ -274,10 +272,6 @@ section.banner:after {
     section {
         padding: 40px 0;
     }
-    /* .banner {
-        padding: 0em;
-    } */
-
     .sticky-top {
         top: 20px;
     }
@@ -289,6 +283,9 @@ section.banner:after {
     }
     .box h3 {
         font-size: 1.7em;
+    }
+    .platform {
+        padding: 40px 15px;
     }
     
     .integrate-main{
@@ -304,6 +301,11 @@ section.banner:after {
         padding: 30px 10px 0 10px !important;
     }
     .mb-0{margin-bottom: 0;}
+
+    .marquee .slick-slide, .marquee_rtl .slick-slide {
+        margin: 0 10px;
+        padding: 15px 30px;
+    }
     
 }
 

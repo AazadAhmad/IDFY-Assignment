@@ -54,7 +54,6 @@ jQuery(document).ready(function($) {
     dots: true
   });
 
-  $(window).scrollTop(0);
 
   gsap.to('.platform', {
     scrollTrigger: {
@@ -68,12 +67,12 @@ jQuery(document).ready(function($) {
   function animateBoxes() {
     gsap.utils.toArray('.platform .card').forEach((card) => {
       gsap.to(card, {
-        scale: 0.51,
+        scale: 0.5,
         opacity: 0,
         scrollTrigger: {
           trigger: card,
-          start: "top 15%",
-          end: "bottom 15%",
+          start: "top 10%",
+          end: "bottom 10%",
           scrub: true,
           // markers: true
         }
@@ -81,8 +80,7 @@ jQuery(document).ready(function($) {
     });
   }
 
-
-
+ 
   document.querySelectorAll("[Heading]").forEach((heading) => {
     new SplitType(heading, { types: "lines, words", });
     gsap.from(heading.querySelectorAll(".word"), {
@@ -142,48 +140,8 @@ jQuery(document).ready(function($) {
     });
   });
 
-  document.querySelectorAll(".box img").forEach((img) => {
-    gsap.from(img, {
-      x: "-10%",
-      opacity: 0,
-      duration: 1,
-      ease: "power1.out",
-      scrollTrigger: {
-        trigger: img,
-        start: "left 80%",
-        toggleActions: "play none none reverse",
-      },
-    });
-  });
+
 
 });
 
 
-
-
-
-
-function animateCard() {
-  
-        
-
-      // document.querySelectorAll(".bg-animation").forEach((span) => {
-      //   gsap.from(span, {
-      //     x: "10%",
-      //     opacity: 0,
-      //     duration: 3,
-      //     ease: "power1.out",
-      //     scrollTrigger: {
-      //       trigger: span,
-      //       start: "right 80%",
-      //       toggleActions: "play none none reverse",
-      //     },
-      //   });
-      // });
-
-  }
-  
-  
-  animateCard();
-
-  
