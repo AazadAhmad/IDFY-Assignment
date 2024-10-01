@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
   $('.slick.marquee').slick({
     speed: 8000,
@@ -7,10 +7,10 @@ jQuery(document).ready(function($) {
     centerMode: false,
     cssEase: 'linear',
     slidesToShow: 1,
-    draggable:false,
-    focusOnSelect:false,
-    pauseOnFocus:false,
-    pauseOnHover:false,
+    draggable: false,
+    focusOnSelect: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
     slidesToScroll: 1,
     variableWidth: true,
     infinite: true,
@@ -25,10 +25,10 @@ jQuery(document).ready(function($) {
     autoplaySpeed: 0,
     centerMode: false,
     cssEase: 'linear',
-    draggable:false,
-    focusOnSelect:false,
-    pauseOnFocus:false,
-    pauseOnHover:false,
+    draggable: false,
+    focusOnSelect: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
     initialSlide: 1,
     arrows: false,
     buttons: false,
-    rtl:true
+    rtl: true
   });
 
   $('.testimonials-slider').slick({
@@ -46,10 +46,10 @@ jQuery(document).ready(function($) {
     infinite: true,
     cssEase: 'ease-in-out',
     slidesToShow: 1,
-    draggable:false,
-    focusOnSelect:false,
-    pauseOnFocus:false,
-    pauseOnHover:false,
+    draggable: false,
+    focusOnSelect: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
     arrows: false,
     dots: true
   });
@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
       // markers: true  
     }
   });
-  
+
   function animateBoxes() {
     gsap.utils.toArray('.platform .card').forEach((card) => {
       gsap.to(card, {
@@ -80,7 +80,7 @@ jQuery(document).ready(function($) {
     });
   }
 
- 
+
   document.querySelectorAll("[Heading]").forEach((heading) => {
     new SplitType(heading, { types: "lines, words", });
     gsap.from(heading.querySelectorAll(".word"), {

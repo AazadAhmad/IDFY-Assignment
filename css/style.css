@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: test_tiempos_headlineblack;
     src: url("../fonts/testtiemposheadline-black-bf66457a50e385b-webfont.woff2") format("woff2"), url("../fonts/testtiemposheadline-black-bf66457a50e385b-webfont.woff") format("woff");
@@ -6,15 +5,18 @@
     font-style: normal;
     font-display: swap;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 *,
 :after,
 :before {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 body {
     background: #fff;
     font-weight: 400;
@@ -24,73 +26,94 @@ body {
     overflow-x: hidden;
     font-family: 'helvetica_neuemedium';
 }
-h1, h2, h3, h4,h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'helvetica_neuebold';
 }
+
 ul {
     padding: 0;
 }
+
 li {
     list-style: none;
 }
+
 a {
     color: #000;
     text-decoration: none;
 }
+
 ::-webkit-scrollbar {
     width: 0.4em;
 }
+
 ::-webkit-scrollbar-track {
     border-radius: 0.5em;
 }
+
 ::-webkit-scrollbar-thumb {
     background: -webkit-linear-gradient(top, rgba(255, 69, 69, 1) 0%, rgba(206, 16, 16, 1) 100%67e0f7, #6cdbb7);
     background: linear-gradient(180deg, rgba(255, 69, 69, 1) 0%, rgba(206, 16, 16, 1) 100%);
     border-radius: 0.5em;
 }
-h1{
+
+h1 {
     font-size: 3em;
     font-weight: 800;
 }
-h2{
+
+h2 {
     font-weight: 600;
     font-size: 3em
 }
-h5{
+
+h5 {
     font-size: 1em;
     color: #EF3F3F;
-    
+
 }
 
 section {
     padding: 80px 0;
     position: relative;
 }
+
 .btn {
     background: #CE1010;
     text-transform: uppercase;
     font-size: 1em;
     font-weight: 500;
 }
+
 .btn span {
     padding-right: 1em;
 }
 
 
 /* Banner Start */
-.banner{
-    background: #1C43B9 ;
+.banner {
+    background: #1C43B9;
     padding: 8em 0;
     overflow: hidden;
 }
-.banner p{
+
+.banner p {
     font-size: 1.4em;
     font-family: 'helvetica_neuelight';
 }
-.banner .container{
+
+.banner .container {
     z-index: 9;
 }
-section.banner:before, section.banner:after {
+
+section.banner:before,
+section.banner:after {
     content: '';
     width: 350px;
     height: 350px;
@@ -100,6 +123,7 @@ section.banner:before, section.banner:after {
     top: -8em;
     border-radius: 50%;
 }
+
 section.banner:after {
     width: 450px;
     height: 450px;
@@ -112,7 +136,8 @@ section.banner:after {
 /* Banner End */
 
 /* Client logos Start */
-.marquee .slick-slide, .marquee_rtl .slick-slide {
+.marquee .slick-slide,
+.marquee_rtl .slick-slide {
     margin: 0 30px;
     background: #ffffff;
     padding: 25px 50px;
@@ -120,13 +145,18 @@ section.banner:after {
     box-shadow: 0px 5px 18px -10px rgb(0 0 0 / 30%);
 
 }
-.marquee .slick-list, .marquee_rtl .slick-list{
+
+.marquee .slick-list,
+.marquee_rtl .slick-list {
     padding: 30px 0;
 }
-.marquee .slick-slide img, .marquee_rtl .slick-slide img {
+
+.marquee .slick-slide img,
+.marquee_rtl .slick-slide img {
     width: 140px;
     height: 40px;
 }
+
 /* Client logos End */
 
 /* Testimonials Start */
@@ -136,22 +166,28 @@ section.banner:after {
     background-attachment: fixed;
 }
 
-.testimonials .slick-slider, .testimonials h2{
+.testimonials .slick-slider,
+.testimonials h2 {
     z-index: 9;
     position: relative;
 }
-.testimonials h2, .testimonials p, .testimonials h3{
+
+.testimonials h2,
+.testimonials p,
+.testimonials h3 {
     color: #fff;
 }
 
-.testimonials p{
+.testimonials p {
     font-size: 18px;
 }
+
 .testimonials h3 {
     font-size: 1.5em;
     margin-top: 1em;
     margin-bottom: 0;
 }
+
 .testimonials .slick-dots {
     width: 100%;
     display: flex;
@@ -178,47 +214,62 @@ section.banner:after {
 .testimonials .slick-dots li.slick-active button {
     background: #CE1010;
 }
+.testimonials-slider{
+    position: relative;
+}
+.quote{
+    position: absolute;
+    top: -50px;
+    opacity: 0.2;
+    z-index: 1;
+}
 
-.box{
+.box {
     padding: 40px;
     border-radius: 10px;
     background: #343434;
     box-shadow: 0px 5px 8px 0px rgb(0 0 0 / 12%);
 }
+
 .box img {
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
     width: 100%;
 }
-.box h3{
+
+.box h3 {
     font-size: 2.2em;
     line-height: 1.2;
 }
-.box p{
+
+.box p {
     font-size: 1.2em;
     font-family: 'helvetica_neuelight';
 }
-.sticky-top{
+
+.sticky-top {
     top: 50px;
 }
 
 
-.platform .box:nth-child(2){
+.platform .box:nth-child(2) {
     background: #CE1010;
 }
-.platform .box:nth-child(3){
+
+.platform .box:nth-child(3) {
     background: #1C43B9;
 }
+
 /* One Platform End */
 
-.integrate-main{
+.integrate-main {
     background: #f5f5f5;
 }
 
 .integrate {
     background: #ffffff;
-    padding:3em 2.5em;
+    padding: 3em 2.5em;
     border-radius: 10px;
     box-shadow: 0px 5px 8px 0px rgb(0 0 0 / 12%);
     position: relative;
@@ -237,32 +288,37 @@ section.banner:after {
     align-items: center;
     color: #ffffff;
 }
-.integrate p{
+
+.integrate p {
     margin-bottom: 0;
 }
 
 
 @media only screen and (min-width: 1920px) {
-  body{
-    font-size: 20px;
-  }
+    body {
+        font-size: 20px;
+    }
 }
+
 @media only screen and (max-width: 1024px) {
     .integrate {
         padding: 3em 1.5em;
     }
 }
+
 @media only screen and (max-width: 991px) {
     section {
         padding: 50px 0;
     }
+
     .banner {
         padding: 2em 1em;
     }
-    
+
     h1 {
         font-size: 2em;
     }
+
     h2 {
         font-size: 2em;
     }
@@ -272,45 +328,57 @@ section.banner:after {
     section {
         padding: 40px 0;
     }
+
     .sticky-top {
         top: 20px;
     }
+
     .box img {
         height: 350px;
     }
+
     .platform h2 {
         margin-bottom: 1em !important;
     }
+
     .box h3 {
         font-size: 1.7em;
     }
+
     .platform {
         padding: 40px 15px;
     }
-    
-    .integrate-main{
+
+    .integrate-main {
         padding: 40px 15px;
     }
+
     .integrate {
         margin-bottom: 4em;
     }
-    .box{
+
+    .box {
         padding: 20px;
     }
-    .box .col-sm-7.ps-5{
+
+    .box .col-sm-7.ps-5 {
         padding: 30px 10px 0 10px !important;
     }
-    .mb-0{margin-bottom: 0;}
 
-    .marquee .slick-slide, .marquee_rtl .slick-slide {
+    .mb-0 {
+        margin-bottom: 0;
+    }
+
+    .marquee .slick-slide,
+    .marquee_rtl .slick-slide {
         margin: 0 10px;
         padding: 15px 30px;
     }
-    .marquee .slick-slide img, .marquee_rtl .slick-slide img {
+
+    .marquee .slick-slide img,
+    .marquee_rtl .slick-slide img {
         width: 130px;
         height: 30px;
     }
-    
+
 }
-
-
